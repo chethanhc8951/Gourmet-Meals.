@@ -1,0 +1,21 @@
+@import "tailwindcss";
+
+@theme {
+  --font-sans: "Helvetica Neue", Arial, ui-sans-serif, system-ui, sans-serif;
+  
+  --color-bento-bg: #f0f2f5;
+  --color-bento-surface: #ffffff;
+  --color-bento-primary: #ff4d4d;
+  --color-bento-text: #1a1a1a;
+  --color-bento-muted: #64748b;
+  --color-bento-accent: #22c55e;
+  
+  --radius-bento: 24px;
+  --shadow-bento: 0 4px 20px rgba(0, 0, 0, 0.05);
+}
+
+@layer base {
+  body {
+    @apply bg-bento-bg text-bento-text antialiased;
+  }
+}
